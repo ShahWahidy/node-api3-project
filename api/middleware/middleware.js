@@ -21,7 +21,7 @@ async function validateUserId(req, res, next) {
 }
 
 function validateUser(req, res, next) {
-  //console.log('req body', req.body)
+  console.log('req body', req.body)
   const { name } = req.body
   if(!name || !name.trim()){
     res.status(400).json({
